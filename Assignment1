@@ -1,0 +1,18 @@
+public static void main(String[] args) 
+{
+  // Print first line
+  System.out.println("Feet\t\tMeters\t|\tMeters\t\tFeet");
+  // 
+Loop
+ 10 times
+  for(int i = 0; i < 10; i++){
+    // Set starting values
+    double feet = 1 + i;
+    double meters = 20 + i * 5;
+    // Calculate transformed values
+    double f2m = footToMeter(feet);
+    double m2f = meterToFoot(meters);
+    System.out.printf("%.1f\t\t%.3f\t|\t%.1f\t\t%.3f\n",
+               feet, f2m, meters, m2f);
+  }      
+}
