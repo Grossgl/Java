@@ -1,0 +1,38 @@
+int main()
+{
+    string inp;
+    cout<<"Please enter an array of numbers in the following form\n"
+          "(where N's are any numbers) :\n"
+          "[N N N\nN N N\nN N N"<<endl;
+    double m1[3][3],m2[3][3];
+    for(short i=0;i<3;i++){
+        cout<<"> ";
+        if(i==0) cout<<"[ ";
+        getline(cin,inp);
+        stringstream inps(inp);
+        for(short j=0;j<3;j++){
+            inps>>m1[i][j];
+        }
+    }// Get the first array
+    cout<<"Now enter the second array :\n";
+    for(short i=0;i<3;i++){
+        cout<<"> ";
+        if(i==0) cout<<"[ ";
+        getline(cin,inp);
+        stringstream inps(inp);
+        for(short j=0;j<3;j++){
+            inps>>m2[i][j];
+        }
+    }// Get the second one
+    bool not_equal=false;
+    for(short i=0; i<3 && !not_equal ;i++)
+        for(short j=0; j<3 && !not_equal ;j++)
+            if(m1[i][j]!=m2[i][j])
+                not_equal=true;// Test equality
+    if(not_equal)
+        cout<<"The two arrays you entered are not equal !!"<<endl;
+    else
+        cout<<"The two arrays you entered are EQUAL ."<<endl;
+
+    return 0;
+}
