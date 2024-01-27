@@ -1,0 +1,107 @@
+class Triangle extends GeometricObject
+{
+
+public double side1;
+public double side2;
+public double side3;
+public Triangle() //default constructor
+{
+    side1=1.0;
+    side2=1.0;
+    side3=1.0;
+}
+
+public Triangle(double side1,double side2,double side3) //peremetrised constructor
+{
+    this.side1=side1;
+    this.side2=side2;
+    this.side3=side3;
+}
+@Override
+public double getPerimeter() //function for getting peremeter for triangle
+{
+    return(side1+side2+side3) ;
+
+}
+
+
+
+@Override
+// function for getting area of triangle
+public double getArea() 
+{
+    double area,s;
+    s=side1+side2+side3;
+    area = Math.sqrt(s * (s- side1) * (s - side2) * (s - side3));
+    return(area);
+
+}
+@Override
+public String toString()//to print the data
+{
+    String s;
+    s="Triangle:side1 "+ side1 +" side2 " + side2 + " side3 "+side3;
+    return(s);
+}
+
+private String getSide1() {
+    // TODO Auto-generated method stub
+    return null;
+}
+
+private String getPerimeter(double d) {
+    // TODO Auto-generated method stub
+    return null;
+}
+
+private String getPerimeter(String string) {
+    // TODO Auto-generated method stub
+    return null;
+}
+
+private String getSide3() {
+    // TODO Auto-generated method stub
+    return null;
+}
+
+private String getSide2() {
+    // TODO Auto-generated method stub
+    return null;
+}
+
+
+public static void main(String args[])
+{
+
+    Scanner input = new Scanner(System.in);
+
+    System.out.println("Enter three sides of the Triangle");
+    double side1 = input.nextDouble();
+    double side2 = input.nextDouble();
+    double side3 = input.nextDouble();
+
+    System.out.println("Enter the color of the Triangle");
+    String color = input.next();
+
+    System.out.println(" Is the Triangle filled? Reply with 'True' or 'False' ");
+
+    String filled = input.next(); 
+}
+
+
+{
+    Triangle triangle = new Triangle(side1, side2, side3);
+    triangle.setFilled(isFilled());
+    triangle.setColor(getColor());
+
+    // Display 
+    System.out.println("The Triangle Sides are \n side 1: " 
+            + triangle.getSide1() + "\n Side 2: " + triangle.getSide2() 
+            + "\n Side 3: " + triangle.getSide3());
+
+    System.out.println("The Triangle's Area is " + triangle.getArea());
+    System.out.println("The Triangle's Perimeter is " + triangle.getPerimeter());
+    System.out.println("The Triangle's Color is " + triangle.getColor());
+    System.out.println("Is the Triangle filled? " + triangle.isFilled());
+}
+}
