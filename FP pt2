@@ -1,0 +1,119 @@
+// fries page
+
+package FinalPackage;
+
+import javafx.application.Application;
+
+public class Fries {
+	char type = 'A';
+	String description = "";
+	int quantity = 1;
+	double price = 0.0;
+	public char getType() {
+		return type;
+	}
+	public void setType(char type) {
+		this.type = type;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public int getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+}
+
+//Burger page
+
+package FinalPackage;
+
+import javafx.application.Application;
+
+public class Burgers {
+	char type = 'A';
+	String description = "";
+	int quantity = 1;
+	double price = 0.0;
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQauntity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	public char getType() {
+		return type;
+	}
+
+	public void setType(char type) {
+		this.type = type;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+}
+
+//Drink page
+
+package FinalPackage;
+
+import javafx.application.Application;
+
+public class Drinks {
+	char type = 'A';
+	String description = "";
+	int quantity = 1;
+	double price = 0.0;
+	public char getType() {
+		return type;
+	}
+	public void setType(char type) {
+		this.type = type;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public int getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+}
