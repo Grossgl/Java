@@ -1,0 +1,224 @@
+package FinalPackage;
+
+import java.util.Scanner;
+
+//Starts the main page
+public class JAVAFP {
+	public static void main(String[] args) {
+		try {
+
+			int noOrder = 1;
+			Scanner input = new Scanner(System.in);
+			char option;
+			System.out.println("What can I get for you today?");
+			System.out.println("A.- Hamburger");
+			System.out.println("B.- Hamburger Dressed");
+			System.out.println("C.- CheeseBurger");
+			System.out.println("D.- CheeseBurger Dressed");
+			System.out.println("E.- Mushroom & Swiss Burger");
+			System.out.println("F.- Frisco Burger");
+			System.out.println("G.- Patty Melt");
+			System.out.println("Exit");
+
+			option = (char) input.nextInt();
+
+			System.out.println("How many burgers would you like?:");
+
+			int quantity = input.nextInt();
+
+// Starts the fries ordering system
+
+			 public static void main1(String[] args) {
+	try {
+		  
+		  int noOrder = 1;
+		  Scanner input = new Scanner(System.in);
+		  char option;
+			  System.out.println("What can I get for you today?");
+			  System.out.println("A.- French Fries");
+			  System.out.println("B.- Spicy Fries");
+			  System.out.println("C.- Home Fries");
+			  System.out.println("D.- Hashbrown Rounds");
+			  System.out.println("Exit");
+			  
+			  option = (char) input.nextInt();
+			  
+			  System.out.println("How many orders would you like?:");
+			  
+			  int quantity = input.nextInt();
+
+        IndividualOrder indOrder = new IndividualOrder();
+			  Fries fries = new Fries();
+			  fries.setType(option);
+			  
+			  switch(option) {
+			  case 'A':
+				  fries.setDescription("French Fries");
+				  fries.setPrice(4);
+				  break;
+			  case 'B':
+				  fries.setDescription("Spicy Fries");
+				  fries.setPrice(4);
+				  break;
+			  case 'C':
+				  fries.setDescription("Home Fries");
+				  fries.setPrice(4);
+				  break;
+			  case 'D':
+				  fries.setDescription("Hashbrown Rounds");
+				  fries.setPrice(4);
+				  break;
+			  
+			  indOrder.setFries(fries);
+			  indOrder.setQuantity(quantity);
+			  
+			  
+			  }catch(Exception e) {
+			  
+	}
+
+// starts the order system
+
+public static void main2(String[] args) {
+		try {
+
+			int noOrder = 1;
+			Scanner input = new Scanner(System.in);
+			char option;
+
+// Starts the drink system
+
+public static void main2(String[] args) {
+		try {
+
+			int noOrder = 1;
+			Scanner input = new Scanner(System.in);
+			char option;
+			System.out.println("What can I get for you today?");
+			System.out.println("A.- Coke");
+			System.out.println("B.- Sprite");
+			System.out.println("C.- Pibb");
+			System.out.println("D.- Lemonade");
+			System.out.println("E.- Water");
+			System.out.println("F.- Root Beer");
+			System.out.println("G.- Red Cream Soda");
+			System.out.println("H.- Diet Coke");
+			System.out.println("Exit");
+
+			option = (char) input.nextInt();
+
+			System.out.println("How many drinks would you like?:");
+
+			int quantity = input.nextInt();
+
+			IndividualOrder indOrder = new IndividualOrder();
+			Drinks drinks = new Drinks();
+			drinks.setType(option);
+
+			switch (option) {
+				case 'A':
+					drinks.setDescription("Coke");
+					drinks.setPrice(3);
+					break;
+				case 'B':
+					drinks.setDescription("Sprite");
+					drinks.setPrice(3);
+					break;
+				case 'C':
+					drinks.setDescription("Pibb");
+					drinks.setPrice(3);
+					break;
+				case 'D':
+					drinks.setDescription("Lemonade");
+					drinks.setPrice(3);
+					break;
+				case 'E':
+					drinks.setDescription("Water");
+					drinks.setPrice(3);
+					break;
+				case 'F':
+					drinks.setDescription("Root Beer");
+					drinks.setPrice(3);
+					break;
+				case 'G':
+					drinks.setDescription("Red Cream Soda");
+					drinks.setPrice(3);
+					break;
+			}
+
+			indOrder.setDrinks(drinks);
+			indOrder.setQuantity(quantity);
+
+		} catch (Exception e) {
+		}
+	}
+
+	{
+	}
+
+// Starts the burger system
+
+public class JAVAFP {
+	public static void main(String[] args) {
+		try {
+
+			int noOrder = 1;
+			Scanner input = new Scanner(System.in);
+			char option;
+			System.out.println("What can I get for you today?");
+			System.out.println("A.- Hamburger");
+			System.out.println("B.- Hamburger Dressed");
+			System.out.println("C.- CheeseBurger");
+			System.out.println("D.- CheeseBurger Dressed");
+			System.out.println("E.- Mushroom & Swiss Burger");
+			System.out.println("F.- Frisco Burger");
+			System.out.println("G.- Patty Melt");
+			System.out.println("Exit");
+
+			option = (char) input.nextInt();
+
+			System.out.println("How many burgers would you like?:");
+
+			int quantity = input.nextInt();
+
+			IndividualOrder indOrder = new IndividualOrder();
+			Burgers burgers = new Burgers();
+			burgers.setType(option);
+
+			switch (option) {
+				case 'A':
+					burgers.setDescription("Hamburger");
+					burgers.setPrice(5);
+					break;
+				case 'B':
+					burgers.setDescription("Hamburger Dressed");
+					burgers.setPrice(7);
+					break;
+				case 'C':
+					burgers.setDescription("CheeseBurger");
+					burgers.setPrice(6);
+					break;
+				case 'D':
+					burgers.setDescription("CheeseBurger Dressed");
+					burgers.setPrice(8);
+					break;
+				case 'E':
+					burgers.setDescription("Mushroom & Swiss Burger");
+					burgers.setPrice(8);
+					break;
+				case 'F':
+					burgers.setDescription("Frisco Burger");
+					burgers.setPrice(9);
+					break;
+				case 'G':
+					burgers.setDescription("Patty Melt");
+					burgers.setPrice(9);
+					break;
+			}
+
+			indOrder.setBurgers(burgers);
+			indOrder.setQuantity(quantity);
+
+		} catch (Exception e) {
+		}
+	}
