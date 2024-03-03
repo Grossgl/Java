@@ -1,0 +1,63 @@
+<DOCTYPE html>
+<html>
+<body>
+
+<h2>Computing Loans</h2>
+
+<form>
+
+Loan Amount : <input type="text" name="loanAmount"><br>
+
+Annual Interest Rate: <input type="text" name="interestRate"><br>
+
+Number of years: <input type="text" name="fyears"><br><br>
+
+<input type="submit" value="Compute Loan Amount">
+<button name="reset" type="reset">Reset</button>
+
+</form>
+</body>
+</html>
+
+
+
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class loanServlet extends HttpServlet {
+  public void doPost(HttpServletRequest request, 
+         HttpServletResponse response)
+        throws ServletException, IOException
+  {
+    response.setContentType("text/html");
+    PrintWriter out = response.getWriter();
+
+String tmp = request.getParameter("loanAmount"); 
+    out.println("Loan Amount: " + tmp);
+    double amount = loanAMount.toDouble();
+    
+    tmp = request.getParameter("interestRate"); 
+out.println("Anunal Interest Rate: "+tmp);
+
+double interest = tmp.toDouble();
+
+tmp = request.getParameter("fyears");
+
+out.println("Number of years: "+tmp);
+
+int years = tmp.toInt();
+
+Loan thisLoan = new Loan(interest, years, amount);
+
+double monthlyPay = thisLoan.getMonthlyPayment();
+
+double totalPay = thisLoan.getTotalPayment();
+
+out.println("Monthly Payment: "+monthlyPay);
+
+out.println("Total Payment: " + totalPay);
+
+    out.close();
+  }
+}
